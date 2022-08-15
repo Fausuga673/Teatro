@@ -55,15 +55,15 @@ if (isset($_POST['enviar'])) {
                 header("refresh:0");                                                # recargamos la página
                 
             } else {
-                
-                echo "<script>alert('El puesto ya fue comprado.')</script>";
-                break;
-                
+
+                ?><script>swal("ERROR", "Ese puesto ya fue comprado", "error");</script><?php 
+                break;  
+
             }
                 
         } else {
             
-            echo "<script>alert('Puesto no encontrado')</script>";
+            ?><script>swal("ERROR", "Puesto no encontrado", "error");</script><?php 
             break;
 
         }
