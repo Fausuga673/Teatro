@@ -20,43 +20,43 @@
                             <tbody>
                                 <tr>
                                     <th>1</th>
-                                    <td><?php echo $database[0][-2]; ?></td>
-                                    <td><?php echo $database[1][-2]; ?></td>
-                                    <td><?php echo $database[2][-2]; ?></td>
-                                    <td><?php echo $database[3][-2]; ?></td>
-                                    <td><?php echo $database[4][-2]; ?></td>
+                                    <td><?php echo $database[0][-1]; ?></td>
+                                    <td><?php echo $database[1][-1]; ?></td>
+                                    <td><?php echo $database[2][-1]; ?></td>
+                                    <td><?php echo $database[3][-1]; ?></td>
+                                    <td><?php echo $database[4][-1]; ?></td>
                                 </tr>
                                 <tr>
                                     <th>2</th>
-                                    <td><?php echo $database[5][-2]; ?></td>
-                                    <td><?php echo $database[6][-2]; ?></td>
-                                    <td><?php echo $database[7][-2]; ?></td>
-                                    <td><?php echo $database[8][-2]; ?></td>
-                                    <td><?php echo $database[9][-2]; ?></td>
+                                    <td><?php echo $database[5][-1]; ?></td>
+                                    <td><?php echo $database[6][-1]; ?></td>
+                                    <td><?php echo $database[7][-1]; ?></td>
+                                    <td><?php echo $database[8][-1]; ?></td>
+                                    <td><?php echo $database[9][-1]; ?></td>
                                 </tr>
                                 <tr>
                                     <th>3</th>
-                                    <td><?php echo $database[10][-2]; ?></td>
-                                    <td><?php echo $database[11][-2]; ?></td>
-                                    <td><?php echo $database[12][-2]; ?></td>
-                                    <td><?php echo $database[13][-2]; ?></td>
-                                    <td><?php echo $database[14][-2]; ?></td>
+                                    <td><?php echo $database[10][-1]; ?></td>
+                                    <td><?php echo $database[11][-1]; ?></td>
+                                    <td><?php echo $database[12][-1]; ?></td>
+                                    <td><?php echo $database[13][-1]; ?></td>
+                                    <td><?php echo $database[14][-1]; ?></td>
                                 </tr>
                                 <tr>
                                     <th>4</th>
-                                    <td><?php echo $database[15][-2]; ?></td>
-                                    <td><?php echo $database[16][-2]; ?></td>
-                                    <td><?php echo $database[17][-2]; ?></td>
-                                    <td><?php echo $database[18][-2]; ?></td>
-                                    <td><?php echo $database[19][-2]; ?></td>
+                                    <td><?php echo $database[15][-1]; ?></td>
+                                    <td><?php echo $database[16][-1]; ?></td>
+                                    <td><?php echo $database[17][-1]; ?></td>
+                                    <td><?php echo $database[18][-1]; ?></td>
+                                    <td><?php echo $database[19][-1]; ?></td>
                                 </tr>
                                 <tr>
                                     <th>5</th>
-                                    <td><?php echo $database[20][-2]; ?></td>
-                                    <td><?php echo $database[21][-2]; ?></td>
-                                    <td><?php echo $database[22][-2]; ?></td>
-                                    <td><?php echo $database[23][-2]; ?></td>
-                                    <td><?php echo $database[24][-2]; ?></td>
+                                    <td><?php echo $database[20][-1]; ?></td>
+                                    <td><?php echo $database[21][-1]; ?></td>
+                                    <td><?php echo $database[22][-1]; ?></td>
+                                    <td><?php echo $database[23][-1]; ?></td>
+                                    <td><?php echo $database[24][-1]; ?></td>
                                 </tr>
                             </tbody>
                         </table>
