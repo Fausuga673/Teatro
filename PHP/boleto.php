@@ -72,4 +72,12 @@ if (isset($_POST['enviar'])) {
     
 }
 
+# si el botón de borrar es accionado
+if (isset($_POST['borrar'])) {
+
+    # recargamos la página 
+    header("refresh:0");
+
+}
+
 ?>
