@@ -95,7 +95,7 @@
                             </div>
                             <div class="d-flex justify-content-center">
                                 <button type="submit" name="enviar" class="btn btn-primary mr-5">Enviar</button>
-                                <button type="submit" class="btn btn-danger">Borrar</button>
+                                <button type="submit" name="borrar" class="btn btn-danger">Borrar</button>
                             </div>
                       </form>
                     </div>
