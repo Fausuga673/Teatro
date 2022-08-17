@@ -10,7 +10,7 @@ Taller: Uso de formularios para transferencia
 
 # Obtenemos la información de database.txt,
 # guardamos la información en un array,
-# cada elemento estará separado por un salto de línea.   
+# cada elemento estará separado por cada salto de línea.   
 $database = explode("\n", file_get_contents('admin/database.txt'));
 
 # Nuevamente obtenemos la información de database.txt, solo que en "forma de cadena"
@@ -32,7 +32,7 @@ if (isset($_POST['enviar'])) {
 
         $i++;                                                                       # $i incrementa su valor dependiendo de las veces que se ejecute el ciclo.
         $valor = $database[$i-1][-1];                                               # recorremos la información de $database y la guardamos como valor.
-        $llave = substr($database[$i-1], 0, -2);                                    # esto devuelve por ejemplo "1 : 1", lo cual usaremos como llave.
+        $llave = substr($database[$i-1], 0, -2);                                    # esto devuelve por ejemplo "1 : 1" ("fila : puesto"), lo cual usaremos como llave.
 
         $newDB["$llave"] = "$valor";                                                # finalmente transformamos el contenido de database.txt en un array asociativo.
         
@@ -47,7 +47,7 @@ if (isset($_POST['enviar'])) {
         # si el usuario ingresa un puesto válido
         if (isset($newDB["$fila : $puesto"])) {
             
-            # si el valor de la llave es igual a V (vendido)
+            # si el valor de la llave es diferente de V (vendido)
             if ($newDB["$fila : $puesto"] !== "V") {
 
                 $contenido = str_replace($puestoBusqueda, $peticion, $contenido);   # modificamos la información de acuerdo a lo que se haya solicitado
