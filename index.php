@@ -3,7 +3,7 @@
 <div class="container" style="height: 100vh;">
         <div class="row h-100 d-flex align-items-center">
             <div class="col-md-6">
-                <div class="card bg-light">
+                <div class="card bg-white border-0 shadow">
                     <div class="card-body">
                         <table class="table table-striped table-bordered">
                             <h1 class="w-100 text-center">Escenario</h1>
@@ -64,8 +64,8 @@
                   </div>
             </div>
             <div class="col-md-6">
-                <div class="card bg-light">
-                    <div class="card-header bg-light" style="position: relative; z-index: 30">
+                <div class="card bg-white border-0 shadow">
+                    <div class="card-header bg-white" style="position: relative; z-index: 30">
                         <h1 class="w-100 text-center">Boletería</h1>
                     </div>  
                     <?php if ($alerta == 1) { ?>
