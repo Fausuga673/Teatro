@@ -16,6 +16,8 @@ $database = explode("\n", file_get_contents('admin/database.txt'));
 # Nuevamente obtenemos la información de database.txt, solo que en "forma de cadena"
 $contenido = file_get_contents("admin/database.txt");
 
+$alerta = 0;
+
 # Si hay envio de información
 if ($_POST) {
     
@@ -52,16 +54,23 @@ if ($_POST) {
         
                 # si el usuario ingresa un puesto válido
                 if (isset($newDB["$fila : $puesto"])) {
-                    
+                
                     # si el valor de la llave es diferente de V (vendido)
                     if ($newDB["$fila : $puesto"] !== "V") {
         
+                        $alerta = 1;
                         $contenido = str_replace($puestoBusqueda, $peticion, $contenido);   # modificamos la información de acuerdo a lo que se haya solicitado
                         file_put_contents("admin/database.txt", $contenido);                # confirmamos la modificación
-                        header("refresh:0");                                                # recargamos la página
                         
+                        # recargamos la página
+                        ?><script>
+                        setTimeout(function () {                                            
+                                window.location.href = 'index.php';
+                            }, 1500);
+                        </script><?php
+
                     } else {
-        
+                        
                         ?><script>swal("Ese puesto ya fue comprado", "", "error");</script><?php 
                         break;  
         
