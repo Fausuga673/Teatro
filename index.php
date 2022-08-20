@@ -1,11 +1,11 @@
 <?php include 'header.php'; ?>
 <?php include 'PHP/boleto.php'; ?>
-    <div class="container" style="height: 100vh;">
+<div class="container" style="height: 100vh;">
         <div class="row h-100 d-flex align-items-center">
             <div class="col-md-6">
                 <div class="card bg-light">
                     <div class="card-body">
-                        <table class="table table-striped">
+                        <table class="table table-striped table-bordered">
                             <h1 class="w-100 text-center">Escenario</h1>
                             <thead>
                                 <tr>
@@ -65,9 +65,14 @@
             </div>
             <div class="col-md-6">
                 <div class="card bg-light">
-                    <div class="card-header bg-light">
+                    <div class="card-header bg-light" style="position: relative; z-index: 30">
                         <h1 class="w-100 text-center">Boletería</h1>
+                    </div>  
+                    <?php if ($alerta == 1) { ?>
+                    <div class="alert alert-success" role="alert" id="alerta" style="position: relative; z-index: 20;">
+                        <h6 class="alert-heading text-center">Acción realizada con éxito</h4>
                     </div>
+                    <?php } ?>
                     <div class="card-body">
                         <form action="index.php" method="post">
                             <div class="form-group">
@@ -103,4 +108,5 @@
             </div>
           </div>
     </div>
+<script src="JS/main.js"></script>
 <?php include 'footer.php'; ?>
