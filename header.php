@@ -21,5 +21,8 @@
     <!-- Sweetalert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
 </head>
 <body class="bg-light">
